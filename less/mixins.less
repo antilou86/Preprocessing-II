@@ -1,1 +1,15 @@
 // Mixins in here
+.flexFlow(@rowColumn, @wrapOrNah) {
+    display: flex;
+    flex-flow: @rowColumn @wrapOrNah;
+}
+
+.marginsYo(){
+    margin-left: 10%;
+    margin-right: 10%;
+    @media @mobile {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
