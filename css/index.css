@@ -168,6 +168,19 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.btn {
+  height: 4rem;
+  width: 80%;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  border-radius: 15px;
+  font-size: 1.25rem;
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
 nav {
   display: flex;
   flex-flow: row nowrap;
@@ -184,6 +197,10 @@ nav p {
   margin-right: 8%;
   width: 48%;
   padding-right: 2%;
+}
+nav p a {
+  display: flex;
+  flex-flow: row nowrap;
 }
 nav p a:link {
   text-decoration: none;
