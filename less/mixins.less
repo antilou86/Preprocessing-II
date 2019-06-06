@@ -1,1 +1,28 @@
 // Mixins in here
+.flexFlow(@rowColumn, @wrapOrNah) {
+    display: flex;
+    flex-flow: @rowColumn @wrapOrNah;
+}
+
+.center() {
+    justify-content: center;
+    align-items: center;
+}
+
+.marginsYo(){
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.buttonsOmg(@height, @width, @buttonColor, @buttonText, @fontSize) {
+    height: @height;
+    width: @width;
+    background-color:@buttonColor;
+    color: @buttonText;
+    border-radius: 15px;
+    font-size: @fontSize;
+    text-align: center;
+    .flexFlow(row, nowrap);
+    .center();
+}
+
