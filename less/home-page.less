@@ -64,4 +64,46 @@ header {
       margin-bottom: 30px;
     }
   }
+  @media @mobile {
+    .flexFlow(column, wrap);
+    .content-section {
+      .flexFlow(column, wrap);
+      width: 100%;
+      
+      .text-content {
+        width: 98%;
+        order: -1;
+      }
+      .img-content {
+        width: 100%;
+        padding-bottom: 3%;
+        padding-left: 2%;
+        order:2;
+      }
+    }
+    section.content-section.inverse-content {
+        border-bottom: 2px dotted @white;
+        padding-bottom: 2%;
+        width: 94%;
+        margin: 3%;
+    }
+    .content-destination {
+      .flexFlow(column, wrap);
+      width: 100%;
+      border-top: 2px dotted @navigation-border;
+      padding-top: 20px;
+    }
+    .content-pick {
+      width:94%;
+      margin: 3%;
+      .flexFlow(column, nowrap);
+      .center();
+      div.destination {
+        width:100%;
+        .btn{
+          width:100%;
+        }
+      }
+    }
+  }
 }// home

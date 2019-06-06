@@ -10,6 +10,22 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+  
+
+  @media @mobile {
+    .flexFlow(column, nowrap);
+    .center();
+    width:96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
 h1, h2, h3, h4, h5 {
   font-family: 'Indie Flower', cursive;
 }

@@ -136,6 +136,22 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+body {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+@media (max-width:500px) {
+  body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
 h1,
 h2,
 h3,
@@ -212,6 +228,21 @@ nav h1 {
   width: 38%;
   margin-left: 10%;
 }
+@media (max-width:500px) {
+  nav {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  nav p {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -275,4 +306,52 @@ header img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width:500px) {
+  .home {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .home .content-section {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+  }
+  .home .content-section .text-content {
+    width: 98%;
+    order: -1;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+    padding-bottom: 3%;
+    padding-left: 2%;
+    order: 2;
+  }
+  .home section.content-section.inverse-content {
+    border-bottom: 2px dotted #FFFFFF;
+    padding-bottom: 2%;
+    width: 94%;
+    margin: 3%;
+  }
+  .home .content-destination {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    border-top: 2px dotted #C0C0C0;
+    padding-top: 20px;
+  }
+  .home .content-pick {
+    width: 94%;
+    margin: 3%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .content-pick div.destination {
+    width: 100%;
+  }
+  .home .content-pick div.destination .btn {
+    width: 100%;
+  }
 }
